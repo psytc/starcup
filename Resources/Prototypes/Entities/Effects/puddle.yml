@@ -208,6 +208,5 @@
   - type: Appearance
   - type: SpawnOnDespawn
     prototype: PuddleSparkle
-  - type: TimedDespawn
-    lifetime: 60 # DeltaV End updates from EE Blood Puddle
-
+#  - type: TimedDespawn # starcup - removed
+#    lifetime: 60 # DeltaV End updates from EE Blood Puddle

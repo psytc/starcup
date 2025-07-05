@@ -41,7 +41,7 @@ public sealed class PuddleFootPrintsSystem : EntitySystem
             && _appearance.TryGetData(uid, PuddleVisuals.CurrentVolume, out var volume, appearance))
             AddColor((Color) color, (float) volume * component.SizeRatio, tripper);
 
-        _solutionContainer.RemoveEachReagent(puddle.Solution.Value, 1);
+        _solutionContainer.RemoveEachReagent(puddle.Solution.Value, 0.1); // starcup - 1 -> 0.1
     }
 
     private void AddColor(Color col, float quantity, FootPrintsComponent component)
