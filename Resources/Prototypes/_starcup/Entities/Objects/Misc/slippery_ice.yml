@@ -1,0 +1,48 @@
+- type: entity
+  name: slippery ice
+  id: SlipperyIce
+  description: It's cold and slippery. Very slippery.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  slipData:
+    requiredSlipSpeed: 4.4
+    superSlippery: false
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/ice_crust.rsi
+    layers:
+      - state: ice
+    color: "#8BEAFF"
+  - type: Marker
+  - type: Clickable
+  - type: Slippery
+    anchored: true
+    noRot: true
+  - type: Transform
+    anchored: true
+  - type: Tag
+    tags: [ Ice ]
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+       fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        layer:
+        - MidImpassable
+       slipFixture:
+         shape:
+           !type:PhysShapeAabb
+           bounds: "-0.4,-0.4,0.4,0.4"
+         mask:
+         - ItemMask
+         layer:
+         - SlipLayer
+         hard: false
+  - type: Appearance
+  - type: StepTrigger
