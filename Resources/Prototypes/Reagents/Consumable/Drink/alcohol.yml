@@ -201,7 +201,7 @@
         - !type:OrganType
           type: Dwarf
           shouldHave: false
-      - !type:Drunk
+      - !type:RealisticDrunk  # starcup
         boozePower: 2
 
 - type: reagent

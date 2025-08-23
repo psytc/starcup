@@ -91,11 +91,11 @@ public sealed class DrunkOverlay : Overlay
     private float BoozePowerToVisual(float boozePower)
     {
         // Clamp booze power when it's low, to prevent really jittery effects
-        if (boozePower < 50f)
-        {
-            return 0;
-        }
-        else
+        // if (boozePower < 50f)
+        // {
+        //     return 0;
+        // }
+        // else
         {
             return Math.Clamp((boozePower - VisualThreshold) / PowerDivisor, 0.0f, 1.0f);
         }
