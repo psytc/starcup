@@ -55,7 +55,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.06
+        amount: 0.12 # starcup: increased from 0.06
   reactiveEffects:
     Flammable:
       methods: [ Touch ]

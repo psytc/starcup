@@ -20,13 +20,13 @@
       effects:
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.3
+        amount: 0.6 # starcup: increased from 0.3
     Narcotic: # The green fairy
       metabolismRate : 0.01
       effects:
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.05
+        amount: 0.1 # starcup: increased from 0.05
       - !type:ModifyStatusEffect
         effectProto: StatusEffectSeeingRainbow
         conditions:
@@ -100,7 +100,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.1
+        amount: 0.2 # starcup: increased from 0.1
 
 - type: reagent
   id: Cognac
@@ -124,7 +124,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.4 # starcup: increased from 0.2
 
 - type: reagent
   id: DeadRum
@@ -202,7 +202,7 @@
           type: Dwarf
           shouldHave: false
       - !type:RealisticDrunk  # starcup
-        boozePower: 2
+        boozePower: 1 # starcup: decreased from 2
 
 - type: reagent
   id: Gin
@@ -226,7 +226,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.4 # starcup: increased from 0.2
 
 - type: reagent
   id: CoffeeLiqueur
@@ -250,7 +250,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.08 # increased from 0.06
+        amount: 0.16 # increased from 0.06
   # end starcup
 
 - type: reagent
@@ -275,7 +275,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.08 # increased from 0.06
+        amount: 0.16 # increased from 0.06
   # end starcup
 
 - type: reagent
@@ -344,7 +344,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.4 # starcup: increased from 0.2
 
 - type: reagent
   id: Sake
@@ -367,7 +367,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.4 # starcup: increased from 0.2
 
 - type: reagent
   id: Tequila
@@ -390,7 +390,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.4 # starcup: increased from 0.4
 
 - type: reagent
   id: Vermouth
@@ -414,7 +414,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.08 # increased from 0.06
+        amount: 0.16 # increased from 0.06
   # end starcup
 
 - type: reagent
@@ -439,7 +439,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.4 # starcup: increased from 0.2
 
 - type: reagent
   id: Whiskey
@@ -463,7 +463,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.4 # starcup: increased from 0.2
 
 - type: reagent
   id: Wine
@@ -503,7 +503,7 @@
         factor: 3
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.06 # starcup
+        amount: 0.12 # starcup
   fizziness: 0.8
 
 # Mixed Alcohol
