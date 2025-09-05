@@ -19,7 +19,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.15
+        amount: 0.4 # starcup: increased from 0.15
 
 - type: reagent
   id: OrangeCreamice
