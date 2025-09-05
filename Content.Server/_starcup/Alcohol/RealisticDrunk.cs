@@ -39,7 +39,7 @@ public sealed partial class RealisticDrunk : EntityEffect
 
                 if (totalEthanolQuantity >= realRate)
                 {
-                    boozePower += totalEthanolQuantity.Float();
+                    boozePower *= totalEthanolQuantity.Float();
                 }
                 else
                 {
