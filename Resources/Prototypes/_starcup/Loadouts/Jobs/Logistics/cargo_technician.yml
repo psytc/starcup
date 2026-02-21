@@ -1,0 +1,11 @@
+# Outer Clothing
+- type: loadout
+  id: LogisticsSweater
+  equipment:
+    outerClothing: ClothingOuterSweaterLogistics
+
+# ID
+- type: loadout
+  id: CargoPilotPDA
+  equipment:
+    id: CargoPilotPDA

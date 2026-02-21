@@ -18,7 +18,7 @@
   description: calm-description
   rules:
   - CalmStationEventScheduler
-  - SpaceTrafficControlFriendlyEventScheduler
+  - StarcupSpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -30,8 +30,7 @@
   description: trouble-description
   rules:
   - TroubleStationEventScheduler
-  - SlowMeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  - StarcupSpaceTrafficControlAllEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -43,8 +42,7 @@
   description: danger-description
   rules:
   - DangerStationEventScheduler
-  - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  - StarcupSpaceTrafficControlAllEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -58,8 +56,7 @@
   - DummyNonAntagChance
   - Thief
   - TroubleStationEventScheduler
-  - SlowMeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  - StarcupSpaceTrafficControlAllEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -69,10 +66,18 @@
   description: late-start-description
   rules:
   - TroubleStationEventScheduler
-  - SlowMeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  - StarcupSpaceTrafficControlAllEventScheduler
   - BasicRoundstartVariation
   - LateJoinAnomalySpawns
   - RoundstartPowerOutageRule
   - SpawnOnShiftChangeShuttleUntilArrivalRule
   - ReturnShiftChangeShuttle
+
+- type: gamePreset
+  id: EmptyEpilogue # Empty, but without any trash or decals, so we can load SyndComm without it looking like a dump
+  alias:
+  - empty
+  - blank
+  name: empty-title
+  showInVote: false
+  description: empty-description

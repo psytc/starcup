@@ -22,18 +22,38 @@
   id: JobBrigmedic
   groups:
   - BrigmedicHead
+  - MedicalMask
   - Scarfs
   - BrigmedicJumpsuit
   - BrigmedicBackpack
   - BrigmedicOuterClothing
+  - BrigmedicGloves
   - BrigmedicShoes
   - Accessibility
   - Trinkets
-  - SecurityStar
   - SecurityFirearm
   - SecurityFirearmAmmo
   - SurvivalBrigmedic
   - GroupSpeciesBreathToolBrigmedic
+
+# Service
+- type: roleLoadout
+  id: JobBoxer
+  groups:
+  - BoxerHead
+  - Scarfs # starcup
+  - BoxerJumpsuit
+  - BoxerBelt
+  - CommonBackpack
+  - BoxerShoes # starcup
+  - Glasses
+  - Accessibility # starcup
+  - Trinkets
+  - BoxerJobTrinkets
+  - BoxerWeapon
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
 
 # Misc
 - type: roleLoadout
